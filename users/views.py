@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def all_user(request):
-  return HttpResponse("return all user")
+  return render(request, "home.html")
+
+def home(request):
+  return render(request, 'index.html')
