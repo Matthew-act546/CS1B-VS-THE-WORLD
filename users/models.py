@@ -12,4 +12,4 @@ class User(models.Model):
   gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
 
   def __str__(self):
-    return f"{self.first_name} {self.last_name} {self.gender}"
+    return f"{self.first_name} {self.last_name}"
