@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def all_user(request):
-  return render(request, "user.html")
+  first_name = ["Matthew", "David", "Fernandez", "Chariss", "Salvador"]
+  context = {"first_name": first_name}
+  return render(request, "user.html", context)
