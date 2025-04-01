@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %} Home {% endblock %}
-{% block h1 %} Home Page {% endblock %}
+{% block h1 %} Welcome! {% endblock %}
 
 
 {% block content %}
@@ -10,10 +10,5 @@
     a home page where you going back when you go to school you, youre gooing home.
     thats all! 
   </p>
-  {% if number %}
-    <p>Number exists: {{ number }}</p>
-  {% else %}
-    <p>'number' is missing in context!</p>
-  {% endif %}
   <a href="{% url 'users' %}"> mewo</a>
 {% endblock %}

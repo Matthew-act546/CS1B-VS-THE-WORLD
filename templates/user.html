@@ -16,8 +16,10 @@
 <p>{{ nest.nested }}</p>
 <a href="{% url 'home' %}"> home</a>
 <ul>
-  {% for f in first_name %}
-    <li>{{ f }}</li>
-  {% endfor %}
+{% for user in users %}
+  <li>{{ user.first_name }} {{ user.last_name }}</li>
+{% empty %}
+  <li>No users found.</li>
+{% endfor %}
 </ul>
 {% endblock %}
