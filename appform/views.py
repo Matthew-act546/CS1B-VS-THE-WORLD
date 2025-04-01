@@ -7,3 +7,6 @@ def home(request):
 
 def about(request):
   return render(request, 'about.html')
+
+def announcements(request):
+  return render(request, 'announcements.html')
