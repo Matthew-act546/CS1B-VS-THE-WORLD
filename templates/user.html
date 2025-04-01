@@ -14,6 +14,7 @@
 {% block loops %}
 <h3>Users</h3>
 <p>{{ nest.nested }}</p>
+<a href="{% url 'home' %}"> home</a>
 <ul>
   {% for f in first_name %}
     <li>{{ f }}</li>
