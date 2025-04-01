@@ -8,7 +8,13 @@
 	box-shadow:  14px 14px 19px #bebebe,
 	-14px -14px 19px #ffffff;
 
-	margin: 40px;
 	padding: 40px;
-	
+	width: 80vw;
+}
+.bg-custom {
+  background-color: #D9D9D9; /* Custom yellow */
+}
+.nav-title {
+	font-size: 1.5rem;
+	font-weight: 640;
 }
