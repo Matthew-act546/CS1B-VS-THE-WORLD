@@ -3,5 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-  context = {'number': 43}
-  return render(request, 'index.html', context)
+  return render(request, 'index.html')
+
+def about(request):
+  return render(request, 'about.html')
