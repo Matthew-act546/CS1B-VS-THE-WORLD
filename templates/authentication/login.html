@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+  <h1>Log in</h1>
+  
+  <br>
+  <form action="" method="post">
+    {% csrf_token %}
+
+    <div class="row g-3 align-items-center">
+      <label for="username" >Username</label>
+        <!-- <input type="number" 
+          style="width: 50vh;" 
+          class="form-control m-0" 
+          id="staticEmail" 
+          min="0" 
+          max="99999999" 
+          oninput="if(this.value.length > 8) this.value = this.value.slice(0,8);"
+          name="student_num"
+          required > -->
+          <input type="text" 
+            class="form-control m-0" 
+            style="width: 50vh;"
+            id="username" 
+            name="username">
+        <br>
+        <label for="inputPassword" >Password</label>
+     
+        <input type="password" 
+          style="width: 50vh;" 
+          id="inputPassword" 
+          class="form-control m-0" 
+          aria-describedby="passwordHelpInline"
+          name="password"
+          required>
+        <span id="passwordHelpInline" class="form-text">
+          Must be 8-20 characters long.
+        </span>
+   
+    </div>
+
+    <input type="submit" value="Log in" class="btn btn-outline-danger">
+    
+  </form>
+  <div class="container mt-5">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+{% endblock %}
