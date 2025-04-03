@@ -9,47 +9,63 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesLaw.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-primary">
+<body id="sign-up-body" class="bg-body-primary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid d-flex justify-content-center align-items-center" style="font-size: 1.8rem; font-weight: bold;">
-            <a class="navbar-brand text-white" href="indexLaw.html">
+            <a class="navbar-brand text-#e45e5e" href="indexLaw.html" style="font-size: 1.8rem; font-weight: bold; color: #e45e5e;">
             CS1B Against the World!
             </a>
         </div>
     </nav>
 
-    <div class="d-flex flex-grow-1 justify-content-center align-items-center">
-        <div class="card" style="width: 400px;">
-            <div class="card-body">
-                <h2 class="text-center">Register Here!</h2>
-                <div>
-                    <label for="inputFirstName" class="form-label">Name</label>
-                    <input id="inputFirstName" class="form-control" type="text" placeholder="Enter your First Name">
-                </div>
-                <div>
-                    <label for="inputLastName" class="form-label">Surname</label>
-                    <input id="inputLastName" class="form-control" type="text" placeholder="Enter your Last Name">
-                </div>
-                <div>
-                    <label for="inputEmail" class="form-label">Institutional Email</label>
-                    <input id="inputEmail" class="form-control" type="email" placeholder="userEmail@plmun.edu.ph">
-                </div>
-                <div>
-                    <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" id="inputPassword" class="form-control">
-                </div>
-                <div>
-                    <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" id="confirmPassword" class="form-control">
-                </div>
-                <small class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
-                <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-danger">Sign up</button>
-                </div>
+    <div>
+
+    <div  id="home" class="container text-center">
+        <div class="row">
+            <div class="col-6 col-12 col-md-6 d-flex justify-content-center align-items-center" style="min-height: 100vh; margin-top: 20px;">
+                    <img src="./assetsLaw/registerBear.png" 
+                    style="width: 370px; height: 420px; border-radius: 15%; box-shadow: 10px 10px 20px #e45e5e;"
+                    alt="a photo a bear holding a sign that says 'Register'">
+                </a>
+
+                <div class="d-flex flex-grow-1" style="margin-top: -50px;">
+                    <div class="card" style="width: 400px;">
+                        <div class="card-body">
+                            <h2 class="text-center">Register Here!</h2>
+                            <div>
+                                <label for="inputFirstName" class="form-label">Name</label>
+                                <input id="inputFirstName" class="form-control" type="text" placeholder="Enter your First Name" required>
+                            </div>
+                            <div>
+                                <label for="inputLastName" class="form-label">Surname</label>
+                                <input id="inputLastName" class="form-control" type="text" placeholder="Enter your Last Name" required>
+                            </div>
+                            <div>
+                                <label for="inputEmail" class="form-label">Institutional Email</label>
+                                <input id="inputEmail" class="form-control" type="email" placeholder="userEmail@plmun.edu.ph" required>
+                            </div>
+                            <div>
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" id="inputPassword" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" id="confirmPassword" class="form-control" required>
+                            </div>
+                            <small class="form-text" style="font-size:xx-small;">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-danger">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
             </div>
+            
         </div>
-        </div>
+        
     </div>
 
+    </div>
 </body>
 </html>
