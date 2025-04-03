@@ -12,12 +12,12 @@ def nav_login_user(request):
       login(request, user)
       return redirect('home')
     else:
-      messages.error(request, 'error infasd')
+      messages.error(request, 'Wrong Email/Password')
       return redirect('home')
   else:
     return render(request, "index.html")
   
 def logout_user(request):
   logout(request)
-  messages.success(request, 'you successfully logout')
+  messages.success(request, 'You successfully logout')
   return redirect('home')
