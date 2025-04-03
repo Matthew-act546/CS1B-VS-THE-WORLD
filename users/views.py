@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 # Create your views here.
-def login_user(request):
+def nav_login_user(request):
   if request.method == "POST":
     student_num = request.POST["username"]
     password = request.POST["password"]

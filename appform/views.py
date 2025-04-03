@@ -10,3 +10,6 @@ def about(request):
 
 def announcements(request):
   return render(request, 'announcements.html')
+
+def register(request):
+  return render(request, 'sign-up.html')
