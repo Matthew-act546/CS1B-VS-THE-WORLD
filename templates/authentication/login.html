@@ -3,7 +3,28 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-  <h1>Log in</h1>
+<div id="#home">
+  <div class="home-hero">
+    <h2>Welcome fellow CS1B!</h2>
+    <p>
+      I am Matthew David C. Fernandez, your president. I created this website to help us officers when sorting, finding,
+      groupings information and not just that we will post announcements here to give updates.
+    </p>
+    
+    <button type="button" class="btn btn-outline-danger">Create account!</button>
+  </div>
+  <div class="container mt-5">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+  <!-- <h1>Log in</h1>
   
   <br>
   <form action="" method="post">
@@ -11,15 +32,7 @@
 
     <div class="row g-3 align-items-center">
       <label for="username" >Username</label>
-        <!-- <input type="number" 
-          style="width: 50vh;" 
-          class="form-control m-0" 
-          id="staticEmail" 
-          min="0" 
-          max="99999999" 
-          oninput="if(this.value.length > 8) this.value = this.value.slice(0,8);"
-          name="student_num"
-          required > -->
+        
           <input type="text" 
             class="form-control m-0" 
             style="width: 50vh;"
@@ -53,5 +66,15 @@
     </div>
     {% endfor %}
     {% endif %}
-  </div>
+  </div> -->
 {% endblock %}
+
+<!-- <input type="number" 
+          style="width: 50vh;" 
+          class="form-control m-0" 
+          id="staticEmail" 
+          min="0" 
+          max="99999999" 
+          oninput="if(this.value.length > 8) this.value = this.value.slice(0,8);"
+          name="student_num"
+          required > -->

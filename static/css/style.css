@@ -1,3 +1,41 @@
+/* ----------------------- LAWRENCE --------------------------------- */
+
+:root {
+	--primary-color: #e45e5e;
+	--secondary-color: #630fd1;
+	--font-size: 16px;
+}   
+.bg-body-primary {
+	background-color: var(--primary-color) !important;
+}
+.navbar{
+	background-color: #e8593c; 
+}
+img {
+	width: 50px;
+	height: 50px;
+}
+.form-check-input {
+	width: 1.2em; 
+	height: 1.2em; 
+	border-color: rgb(255, 255, 255); 
+	background-color: transparent; 
+}
+.form-check-input:checked {
+	background-color: red; 
+	border-color: red;
+}
+::selection {
+	background-color: #e45e5e; 
+	color: white;
+} 
+
+/* .card {
+	width: 50%;
+} */
+
+
+
 .home-hero {
   background: #F8F8F8; 
 	border: solid #CB0525 10px; 
@@ -18,3 +56,4 @@
 	font-size: 1.5rem;
 	font-weight: 640;
 }
+

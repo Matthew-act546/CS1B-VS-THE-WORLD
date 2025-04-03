@@ -13,9 +13,9 @@ def login_user(request):
       return redirect('home')
     else:
       messages.error(request, 'error infasd')
-      return redirect('login')
+      return redirect('home')
   else:
-    return render(request, "authentication/login.html")
+    return render(request, "index.html")
   
 def logout_user(request):
   logout(request)
