@@ -20,9 +20,15 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'announcements' %}">Announcements</a>
         </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a href="{% url 'logout' %}" class="btn btn-outline-danger ms-auto">Log out</a>
+        </li>
+        {% else %}
         <li class="nav-item">
           <a href="{% url 'login' %}" class="btn btn-outline-danger ms-auto">Log in</a>
         </li>
+        {% endif %}
       </ul>
 
     </div>
